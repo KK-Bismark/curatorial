@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Your Cart | CURATORIAL</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary": "#795900",
+                        "surface-container-lowest": "#ffffff",
+                        "primary-fixed": "#dbe1ff",
+                        "primary": "#00113a",
+                        "secondary-fixed": "#ffdfa0",
+                        "on-primary-fixed-variant": "#2a4386",
+                        "primary-fixed-dim": "#b3c5ff",
+                        "on-surface": "#1a1b20",
+                        "tertiary-fixed": "#ffdbd0",
+                        "surface-bright": "#faf8ff",
+                        "on-primary": "#ffffff",
+                        "on-tertiary-fixed": "#390b00",
+                        "inverse-surface": "#2f3035",
+                        "on-tertiary-fixed-variant": "#783018",
+                        "inverse-primary": "#b3c5ff",
+                        "on-error": "#ffffff",
+                        "primary-container": "#002366",
+                        "on-error-container": "#93000a",
+                        "background": "#faf8ff",
+                        "error": "#ba1a1a",
+                        "surface-container-highest": "#e3e2e8",
+                        "surface-container": "#efedf3",
+                        "surface-dim": "#dad9e0",
+                        "surface-container-low": "#f4f3f9",
+                        "on-secondary-container": "#6d5000",
+                        "secondary-container": "#ffbf00",
+                        "outline": "#757682",
+                        "surface": "#faf8ff",
+                        "on-tertiary": "#ffffff",
+                        "outline-variant": "#c5c6d2",
+                        "on-surface-variant": "#444650",
+                        "error-container": "#ffdad6",
+                        "on-primary-fixed": "#00174a",
+                        "secondary-fixed-dim": "#fbbc00",
+                        "on-primary-container": "#758dd5",
+                        "inverse-on-surface": "#f1f0f6",
+                        "tertiary-container": "#501300",
+                        "on-tertiary-container": "#d37758",
+                        "surface-variant": "#e3e2e8",
+                        "on-secondary-fixed": "#261a00",
+                        "on-secondary-fixed-variant": "#5c4300",
+                        "on-secondary": "#ffffff",
+                        "tertiary": "#2d0700",
+                        "tertiary-fixed-dim": "#ffb59e",
+                        "surface-tint": "#435b9f",
+                        "surface-container-high": "#e9e7ee",
+                        "on-background": "#1a1b20"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Manrope"],
+                        "body": ["Inter"],
+                        "label": ["Inter"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, .font-headline { font-family: 'Manrope', sans-serif; }
+    </style>
+</head>
+<body class="bg-background text-on-surface min-h-screen">
+<!-- TopNavBar -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-xl shadow-sm shadow-blue-900/5">
+<div class="flex justify-between items-center px-8 py-4 max-w-[1920px] mx-auto">
+<div class="text-2xl font-black tracking-tighter text-blue-950 dark:text-white uppercase"> <a href="homepage.html"> CURATORIAL</div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="font-['Manrope'] tracking-tight text-sm uppercase font-semibold text-slate-500 dark:text-slate-400 hover:text-blue-900 transition-colors" href="homepage.html">New Arrivals</a>
+<a class="font-['Manrope'] tracking-tight text-sm uppercase font-semibold text-slate-500 dark:text-slate-400 hover:text-blue-900 transition-colors" href="#">Designers</a>
+<a class="font-['Manrope'] tracking-tight text-sm uppercase font-semibold text-slate-500 dark:text-slate-400 hover:text-blue-900 transition-colors" href="#">Editorial</a>
+<a class="font-['Manrope'] tracking-tight text-sm uppercase font-semibold text-slate-500 dark:text-slate-400 hover:text-blue-900 transition-colors" href="#">Archive</a>
+</div>
+<div class="flex items-center space-x-6">
+<button class="material-symbols-outlined text-blue-900 dark:text-blue-200">shopping_bag</button>
+<button class="material-symbols-outlined text-blue-900 dark:text-blue-200">person</button>
+</div>
+</div>
+</nav>
+<main class="pt-32 pb-24 px-8 max-w-7xl mx-auto">
+<header class="mb-12">
+<h1 class="text-4xl font-extrabold tracking-tighter text-primary uppercase mb-2">Shopping Bag</h1>
+<p class="text-on-surface-variant font-medium">3 Items curated for your collection</p>
+</header>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16">
+<!-- Cart Items List -->
+<div class="lg:col-span-8 space-y-12">
+<!-- Item 1 -->
+<div class="flex flex-col sm:flex-row gap-8 items-start group">
+<div class="w-full sm:w-48 aspect-[3/4] bg-surface-container overflow-hidden rounded-lg">
+<img alt="Luxury wool coat" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Studio shot of a minimalist charcoal grey oversized wool coat on a clean off-white background with soft shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDst7lPvSQk7mEb9c-JWvSbR26ZhjP8g3_x13D4oCZLf_iInSaSqeNfoPCeUDXQ7BOhttMR2XWEt_M_4Dr35fghbskMoh8zozjZp-dwbM_CBQx0jAxdNtl_KeYLl2Titl4LWoewTGsWVs2S-srW-5ZLsdfEYZOXC7XT9xTnCtC7NVW1oHkoRarR7OoNpzqLTGcW0KJ5nc1FxUYoD2-XefabASAlrsjOwlS2tNNX630X1dVQRNrSu3DdC3R_wN-AaSuv0580FrV3fA"/>
+</div>
+<div class="flex-1 flex flex-col justify-between h-full py-2">
+<div>
+<div class="flex justify-between items-start">
+<h3 class="text-xl font-bold text-primary tracking-tight mb-1">Architectural Overcoat</h3>
+<span class="text-lg font-bold text-primary">$1,250</span>
+</div>
+<p class="text-sm font-label uppercase tracking-widest text-on-surface-variant mb-4">Lemaire</p>
+<div class="space-y-1">
+<p class="text-sm text-on-surface-variant">Color: <span class="text-on-surface font-semibold">Anthracite</span></p>
+<p class="text-sm text-on-surface-variant">Size: <span class="text-on-surface font-semibold">48 (M)</span></p>
+</div>
+</div>
+<div class="flex items-center justify-between mt-8">
+<div class="flex items-center bg-surface-container-high px-4 py-2 rounded-full space-x-6">
+<button class="material-symbols-outlined text-sm hover:text-secondary transition-colors">remove</button>
+<span class="font-semibold text-primary w-4 text-center">1</span>
+<button class="material-symbols-outlined text-sm hover:text-secondary transition-colors">add</button>
+</div>
+<button class="text-xs font-label uppercase tracking-widest text-on-surface-variant hover:text-error transition-colors underline underline-offset-4">Remove</button>
+</div>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="flex flex-col sm:flex-row gap-8 items-start group">
+<div class="w-full sm:w-48 aspect-[3/4] bg-surface-container overflow-hidden rounded-lg">
+<img alt="Designer leather shoes" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="High-end black leather derby shoes with a chunky sole resting on a warm wooden surface with cinematic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA19QcGwY99tZ-YqU42aPQP-XDj4rjkqNgkGjWf1fRvZultSrvKzaLZrvj8u9hyrCNf6lGHErbj-jhDuGMUCPzHhCexJxQsjMmeDHrD_aVUXI2MLDTYvQIjKtknAf0GCXmkdYrlOHFoLwmm3ZogTm0TqBriHBOknzoniFEMyIiVOOXVD8T9KomSnV9WVhGTcpOcEVbuBjeuz-6zDuNhB0P5JsZFe04Kc10Up9WidODek4tpsrxyxabfoykeupLG10_ze2g0RrqZ8A"/>
+</div>
+<div class="flex-1 flex flex-col justify-between h-full py-2">
+<div>
+<div class="flex justify-between items-start">
+<h3 class="text-xl font-bold text-primary tracking-tight mb-1">Chelsea Lug-Sole Boot</h3>
+<span class="text-lg font-bold text-primary">$890</span>
+</div>
+<p class="text-sm font-label uppercase tracking-widest text-on-surface-variant mb-4">The Row</p>
+<div class="space-y-1">
+<p class="text-sm text-on-surface-variant">Color: <span class="text-on-surface font-semibold">Nero</span></p>
+<p class="text-sm text-on-surface-variant">Size: <span class="text-on-surface font-semibold">42</span></p>
+</div>
+</div>
+<div class="flex items-center justify-between mt-8">
+<div class="flex items-center bg-surface-container-high px-4 py-2 rounded-full space-x-6">
+<button class="material-symbols-outlined text-sm hover:text-secondary transition-colors">remove</button>
+<span class="font-semibold text-primary w-4 text-center">1</span>
+<button class="material-symbols-outlined text-sm hover:text-secondary transition-colors">add</button>
+</div>
+<button class="text-xs font-label uppercase tracking-widest text-on-surface-variant hover:text-error transition-colors underline underline-offset-4">Remove</button>
+</div>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="flex flex-col sm:flex-row gap-8 items-start group">
+<div class="w-full sm:w-48 aspect-[3/4] bg-surface-container overflow-hidden rounded-lg">
+<img alt="Silk shirt" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Detail of a cream colored raw silk shirt draped elegantly over a mid-century modern chair with natural window light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKF65EIRVHkkVIU4KsQGcaIiwxpZw3u6QNCsVwyURxZMneCoA_48uxtMragZZSudyQNsdU9QJ8xeyX5lDDNojzA4hZReAz_Oj8d224Isc5ig-mqjBRDw9rLX--GkpF5GE0Zduqhj3XZb_y6t28di6XI2ricGrgnLNMzlB2nWcOs9Aux_Ur786wJhM9dPrekewddxxdNQiKwkNRADLvXfsHZMZ0ReWWTbFvbzc8MEauV7Nr940t88SC09N_fpfWtKB5CDLvawcjfA"/>
+</div>
+<div class="flex-1 flex flex-col justify-between h-full py-2">
+<div>
+<div class="flex justify-between items-start">
+<h3 class="text-xl font-bold text-primary tracking-tight mb-1">Silk Poplin Shirt</h3>
+<span class="text-lg font-bold text-primary">$420</span>
+</div>
+<p class="text-sm font-label uppercase tracking-widest text-on-surface-variant mb-4">Auralee</p>
+<div class="space-y-1">
+<p class="text-sm text-on-surface-variant">Color: <span class="text-on-surface font-semibold">Bone White</span></p>
+<p class="text-sm text-on-surface-variant">Size: <span class="text-on-surface font-semibold">3</span></p>
+</div>
+</div>
+<div class="flex items-center justify-between mt-8">
+<div class="flex items-center bg-surface-container-high px-4 py-2 rounded-full space-x-6">
+<button class="material-symbols-outlined text-sm hover:text-secondary transition-colors">remove</button>
+<span class="font-semibold text-primary w-4 text-center">1</span>
+<button class="material-symbols-outlined text-sm hover:text-secondary transition-colors">add</button>
+</div>
+<button class="text-xs font-label uppercase tracking-widest text-on-surface-variant hover:text-error transition-colors underline underline-offset-4">Remove</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Summary Section -->
+<div class="lg:col-span-4">
+<div class="sticky top-32 p-8 bg-surface-container-low rounded-xl">
+<h2 class="text-xl font-bold text-primary mb-8 tracking-tight uppercase">Order Summary</h2>
+<div class="space-y-4 mb-8">
+<div class="flex justify-between items-center text-on-surface-variant">
+<span class="text-sm">Subtotal</span>
+<span class="text-primary font-semibold">$2,560.00</span>
+</div>
+<div class="flex justify-between items-center text-on-surface-variant">
+<span class="text-sm">Estimated Shipping</span>
+<span class="text-primary font-semibold">$25.00</span>
+</div>
+<div class="flex justify-between items-center text-on-surface-variant">
+<span class="text-sm">Taxes</span>
+<span class="text-primary font-semibold">$204.80</span>
+</div>
+</div>
+<div class="pt-6 mt-6 border-t border-outline-variant/30">
+<div class="flex justify-between items-end mb-8">
+<span class="text-primary font-bold text-lg">Total</span>
+<span class="text-3xl font-black tracking-tighter text-primary">$2,789.80</span>
+</div>
+<button class="w-full bg-primary text-on-primary py-5 rounded-lg font-headline font-bold uppercase tracking-widest text-sm hover:bg-primary-container transition-all active:scale-[0.98] shadow-xl shadow-primary/10">
+                            Proceed to Checkout
+                        </button>
+<div class="mt-6 flex flex-col space-y-3">
+<div class="flex items-center space-x-3 text-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-sm">lock</span>
+<span>Secure encrypted checkout</span>
+</div>
+<div class="flex items-center space-x-3 text-xs text-on-surface-variant">
+<span class="material-symbols-outlined text-sm">local_shipping</span>
+<span>Complimentary express delivery on orders over $500</span>
+</div>
+</div>
+</div>
+<!-- Add-on promo -->
+<div class="mt-8 p-4 bg-secondary-container/20 rounded-lg">
+<div class="flex space-x-3">
+<span class="material-symbols-outlined text-secondary">workspace_premium</span>
+<div>
+<p class="text-xs font-bold text-on-secondary-container uppercase mb-1">Curatorial Member Benefit</p>
+<p class="text-[11px] leading-relaxed text-on-secondary-container opacity-80">You've earned 2,560 archive points with this purchase.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full py-16 px-8 mt-24 border-t border-slate-200/50 dark:border-slate-800/50 bg-slate-50 dark:bg-slate-950">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto">
+<div class="space-y-6">
+<div class="text-xl font-bold text-blue-950 dark:text-white">CURATORIAL</div>
+<p class="font-['Inter'] text-sm tracking-wide leading-relaxed text-slate-500 dark:text-slate-400">
+                    Defined by a commitment to enduring design and architectural form. 
+                    Redefining the digital shopping experience through editorial vision.
+                </p>
+</div>
+<div>
+<h4 class="font-headline font-bold text-primary mb-4 uppercase text-xs tracking-widest">Collections</h4>
+<ul class="space-y-3">
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-amber-600 transition-colors text-sm" href="#">New Arrivals</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-amber-600 transition-colors text-sm" href="#">The Minimalist Edit</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-amber-600 transition-colors text-sm" href="#">Outerwear</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-amber-600 transition-colors text-sm" href="#">Footwear</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-headline font-bold text-primary mb-4 uppercase text-xs tracking-widest">Client Service</h4>
+<ul class="space-y-3">
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-amber-600 transition-colors text-sm" href="#">Shipping &amp; Returns</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-amber-600 transition-colors text-sm" href="#">Contact</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-amber-600 transition-colors text-sm" href="#">Sustainability</a></li>
+<li><a class="text-slate-500 dark:text-slate-400 hover:text-amber-600 transition-colors text-sm" href="#">Size Guide</a></li>
+</ul>
+</div>
+<div class="space-y-6">
+<h4 class="font-headline font-bold text-primary mb-4 uppercase text-xs tracking-widest">Newsletter</h4>
+<p class="text-sm text-slate-500 dark:text-slate-400">Subscribe for early access to curated drops.</p>
+<div class="flex">
+<input class="bg-surface-container-highest border-none text-sm p-3 w-full rounded-l-md focus:ring-1 focus:ring-primary" placeholder="email address" type="email"/>
+<button class="bg-primary text-on-primary px-4 rounded-r-md">
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+<div class="max-w-7xl mx-auto mt-16 pt-8 border-t border-slate-200/30 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-xs font-['Inter'] tracking-wide text-slate-400 uppercase">© 2024 THE EDITORIAL COMMERCE STANDARD. ALL RIGHTS RESERVED.</p>
+<div class="flex space-x-6">
+<a class="text-xs font-['Inter'] tracking-wide text-slate-400 uppercase hover:text-primary transition-colors" href="#">Privacy Policy</a>
+<a class="text-xs font-['Inter'] tracking-wide text-slate-400 uppercase hover:text-primary transition-colors" href="#">Terms of Service</a>
+</div>
+</div>
+</footer>
+</body></html>

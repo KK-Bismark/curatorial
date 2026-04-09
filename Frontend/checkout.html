@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Checkout | CURATORIAL</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;400;600;700;800&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        h1, h2, h3, .brand-logo {
+            font-family: 'Manrope', sans-serif;
+        }
+        /* Custom ghost border fallback from design system */
+        .ghost-border {
+            border: 1px solid rgba(117, 118, 130, 0.15);
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "secondary": "#795900",
+                      "surface-container-lowest": "#ffffff",
+                      "primary-fixed": "#dbe1ff",
+                      "primary": "#00113a",
+                      "secondary-fixed": "#ffdfa0",
+                      "on-primary-fixed-variant": "#2a4386",
+                      "primary-fixed-dim": "#b3c5ff",
+                      "on-surface": "#1a1b20",
+                      "tertiary-fixed": "#ffdbd0",
+                      "surface-bright": "#faf8ff",
+                      "on-primary": "#ffffff",
+                      "on-tertiary-fixed": "#390b00",
+                      "inverse-surface": "#2f3035",
+                      "on-tertiary-fixed-variant": "#783018",
+                      "inverse-primary": "#b3c5ff",
+                      "on-error": "#ffffff",
+                      "primary-container": "#002366",
+                      "on-error-container": "#93000a",
+                      "background": "#faf8ff",
+                      "error": "#ba1a1a",
+                      "surface-container-highest": "#e3e2e8",
+                      "surface-container": "#efedf3",
+                      "surface-dim": "#dad9e0",
+                      "surface-container-low": "#f4f3f9",
+                      "on-secondary-container": "#6d5000",
+                      "secondary-container": "#ffbf00",
+                      "outline": "#757682",
+                      "surface": "#faf8ff",
+                      "on-tertiary": "#ffffff",
+                      "outline-variant": "#c5c6d2",
+                      "on-surface-variant": "#444650",
+                      "error-container": "#ffdad6",
+                      "on-primary-fixed": "#00174a",
+                      "secondary-fixed-dim": "#fbbc00",
+                      "on-primary-container": "#758dd5",
+                      "inverse-on-surface": "#f1f0f6",
+                      "tertiary-container": "#501300",
+                      "on-tertiary-container": "#d37758",
+                      "surface-variant": "#e3e2e8",
+                      "on-secondary-fixed": "#261a00",
+                      "on-secondary-fixed-variant": "#5c4300",
+                      "on-secondary": "#ffffff",
+                      "tertiary": "#2d0700",
+                      "tertiary-fixed-dim": "#ffb59e",
+                      "surface-tint": "#435b9f",
+                      "surface-container-high": "#e9e7ee",
+                      "on-background": "#1a1b20"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "fontFamily": {
+                      "headline": ["Manrope"],
+                      "body": ["Inter"],
+                      "label": ["Inter"]
+              }
+            },
+          },
+        }
+    </script>
+</head>
+<body class="bg-surface text-on-surface">
+<!-- TopNavBar -->
+<header class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-xl shadow-sm shadow-blue-900/5">
+<div class="flex justify-between items-center px-8 py-4 max-w-[1920px] mx-auto">
+<div class="text-2xl font-black tracking-tighter text-primary uppercase">CURATORIAL</div>
+<nav class="hidden md:flex items-center space-x-8">
+<a class="font-['Manrope'] tracking-tight text-sm uppercase font-semibold text-slate-500 hover:text-primary transition-colors" href="#">New Arrivals</a>
+<a class="font-['Manrope'] tracking-tight text-sm uppercase font-semibold text-slate-500 hover:text-primary transition-colors" href="#">Designers</a>
+<a class="font-['Manrope'] tracking-tight text-sm uppercase font-semibold text-slate-500 hover:text-primary transition-colors" href="#">Editorial</a>
+<a class="font-['Manrope'] tracking-tight text-sm uppercase font-semibold text-slate-500 hover:text-primary transition-colors" href="#">Archive</a>
+</nav>
+<div class="flex items-center space-x-6">
+<button class="material-symbols-outlined text-primary" data-icon="shopping_bag">shopping_bag</button>
+<button class="material-symbols-outlined text-primary" data-icon="person">person</button>
+</div>
+</div>
+</header>
+<main class="pt-32 pb-24 px-8 max-w-7xl mx-auto">
+<div class="flex flex-col lg:flex-row gap-16">
+<!-- Left Side: Multi-step Flow -->
+<div class="flex-1 space-y-12">
+<!-- Header -->
+<div class="space-y-2">
+<h1 class="text-4xl font-extrabold tracking-tight text-primary">Secure Checkout</h1>
+<p class="text-on-surface-variant font-medium">Review your order and complete your purchase.</p>
+</div>
+<!-- Steps -->
+<div class="space-y-16">
+<!-- Section 1: Shipping -->
+<section class="space-y-8">
+<div class="flex items-center gap-4">
+<span class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center text-xs font-bold">1</span>
+<h2 class="text-xl font-bold tracking-tight uppercase text-primary">Shipping Address</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 bg-surface-container-low p-8 rounded-xl">
+<div class="md:col-span-2 space-y-2">
+<label class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant px-1">Full Name</label>
+<input class="w-full bg-surface-container-highest border-none rounded-lg p-4 focus:ring-1 focus:ring-primary/20 focus:bg-surface-container-lowest transition-all" placeholder="Alexander McQueen" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant px-1">Email Address</label>
+<input class="w-full bg-surface-container-highest border-none rounded-lg p-4 focus:ring-1 focus:ring-primary/20 focus:bg-surface-container-lowest transition-all" placeholder="alex@editorial.com" type="email"/>
+</div>
+<div class="space-y-2">
+<label class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant px-1">Phone</label>
+<input class="w-full bg-surface-container-highest border-none rounded-lg p-4 focus:ring-1 focus:ring-primary/20 focus:bg-surface-container-lowest transition-all" placeholder="+44 20 7946 0958" type="tel"/>
+</div>
+<div class="md:col-span-2 space-y-2">
+<label class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant px-1">Street Address</label>
+<input class="w-full bg-surface-container-highest border-none rounded-lg p-4 focus:ring-1 focus:ring-primary/20 focus:bg-surface-container-lowest transition-all" placeholder="12 Savile Row" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant px-1">City</label>
+<input class="w-full bg-surface-container-highest border-none rounded-lg p-4 focus:ring-1 focus:ring-primary/20 focus:bg-surface-container-lowest transition-all" placeholder="London" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant px-1">Postal Code</label>
+<input class="w-full bg-surface-container-highest border-none rounded-lg p-4 focus:ring-1 focus:ring-primary/20 focus:bg-surface-container-lowest transition-all" placeholder="W1S 3PQ" type="text"/>
+</div>
+</div>
+</section>
+<!-- Section 2: Delivery -->
+<section class="space-y-8">
+<div class="flex items-center gap-4">
+<span class="w-8 h-8 rounded-full bg-surface-container-highest text-on-surface-variant flex items-center justify-center text-xs font-bold">2</span>
+<h2 class="text-xl font-bold tracking-tight uppercase text-primary">Delivery Method</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<!-- Selected State -->
+<div class="p-6 rounded-xl bg-surface-container-lowest border-2 border-secondary-container flex justify-between items-center cursor-pointer">
+<div class="space-y-1">
+<p class="font-bold text-primary">Express Courier</p>
+<p class="text-sm text-on-surface-variant">1-2 Business Days</p>
+</div>
+<p class="font-bold text-primary">£25.00</p>
+</div>
+<!-- Inactive State -->
+<div class="p-6 rounded-xl bg-surface-container-low ghost-border flex justify-between items-center cursor-pointer hover:bg-surface-container-high transition-colors">
+<div class="space-y-1">
+<p class="font-bold text-primary">Standard Shipping</p>
+<p class="text-sm text-on-surface-variant">3-5 Business Days</p>
+</div>
+<p class="font-bold text-primary">Free</p>
+</div>
+</div>
+</section>
+<!-- Section 3: Payment -->
+<section class="space-y-8">
+<div class="flex items-center gap-4">
+<span class="w-8 h-8 rounded-full bg-surface-container-highest text-on-surface-variant flex items-center justify-center text-xs font-bold">3</span>
+<h2 class="text-xl font-bold tracking-tight uppercase text-primary">Payment Information</h2>
+</div>
+<div class="bg-surface-container-low p-8 rounded-xl space-y-6">
+<div class="flex gap-4 mb-2">
+<div class="bg-surface-container-highest px-4 py-2 rounded-lg text-[10px] font-bold text-on-surface-variant uppercase tracking-widest">Credit Card</div>
+<div class="bg-surface-container-low ghost-border px-4 py-2 rounded-lg text-[10px] font-bold text-on-surface-variant/40 uppercase tracking-widest">PayPal</div>
+<div class="bg-surface-container-low ghost-border px-4 py-2 rounded-lg text-[10px] font-bold text-on-surface-variant/40 uppercase tracking-widest">Apple Pay</div>
+</div>
+<div class="space-y-2">
+<label class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant px-1">Card Number</label>
+<div class="relative">
+<input class="w-full bg-surface-container-highest border-none rounded-lg p-4 focus:ring-1 focus:ring-primary/20 focus:bg-surface-container-lowest transition-all" placeholder="•••• •••• •••• ••••" type="text"/>
+<span class="material-symbols-outlined absolute right-4 top-1/2 -translate-y-1/2 text-on-surface-variant/50" data-icon="credit_card">credit_card</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant px-1">Expiry Date</label>
+<input class="w-full bg-surface-container-highest border-none rounded-lg p-4 focus:ring-1 focus:ring-primary/20 focus:bg-surface-container-lowest transition-all" placeholder="MM / YY" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant px-1">CVV</label>
+<input class="w-full bg-surface-container-highest border-none rounded-lg p-4 focus:ring-1 focus:ring-primary/20 focus:bg-surface-container-lowest transition-all" placeholder="•••" type="text"/>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+<!-- Right Side: Order Summary -->
+<aside class="w-full lg:w-[400px] space-y-8">
+<div class="sticky top-32 bg-white p-8 rounded-2xl shadow-xl shadow-primary/5 space-y-8">
+<h3 class="text-lg font-bold tracking-tight uppercase text-primary">Order Summary</h3>
+<div class="space-y-6">
+<!-- Item 1 -->
+<div class="flex gap-4">
+<div class="w-20 h-24 bg-surface-container-low rounded-lg overflow-hidden flex-shrink-0">
+<img alt="Product" class="w-full h-full object-cover" data-alt="Close-up of a high-end charcoal wool overcoat with clean tailoring on a minimalist light grey background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAso35RaaQRAjuZDl4T2Cg-cI_QoJ1xe9ESQBxwgUMLLOjYoVlqynHtD2XWuVd8hlYQZceRb1R5Fu0h9PkeRWf_yiRQ0Pa7jMlVxaIApQz3hNovK8qF1g7mV5QjOqqRb36N0OiKF4Wdl68I6ojebxR5ILtcP3KULvjMmaUSJJxfj1R4mAI_LObuG8hdw5MPCHJzWSojnR5CfuFkiT-mvXqz__U_0OE4yGYJ3m-ht3CjyvM3hWqcEo-b6dOIU28MtecwHJ0FUc0sKg"/>
+</div>
+<div class="flex-1 space-y-1">
+<p class="text-sm font-bold text-primary uppercase tracking-tight">Structured Wool Overcoat</p>
+<p class="text-xs text-on-surface-variant">Size: 48 | Color: Charcoal</p>
+<p class="text-sm font-semibold mt-2">£1,250.00</p>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="flex gap-4">
+<div class="w-20 h-24 bg-surface-container-low rounded-lg overflow-hidden flex-shrink-0">
+<img alt="Product" class="w-full h-full object-cover" data-alt="Elegant pointed-toe black leather boots with a subtle sheen, arranged professionally on a neutral surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVl1axQudlOYVhFELRgu9CyN9-eXzo9yeb_j1bqcs2mHf0FlSJaruoX-B6YCU1VzjzSK9eD-ufhJRwj-hC9IclJGIqKDRCXRzIKqSTsacZioQ_MSrbEOL53JaIgfPz3Nerpwe2b6V5XtBGmfdWiU3tx19SsioQVe9i8wo7mCPZYpjpaD9_c9rlZ9qPeZj6BCRNHVsm-MFajArieNNi5XhSg_aj73N6UbDWirAOus2L2ogGXfKZnYuUbJJaALHczKLdFdlJ-44Fug"/>
+</div>
+<div class="flex-1 space-y-1">
+<p class="text-sm font-bold text-primary uppercase tracking-tight">Chelsea Archive Boot</p>
+<p class="text-xs text-on-surface-variant">Size: 42 | Color: Noir</p>
+<p class="text-sm font-semibold mt-2">£840.00</p>
+</div>
+</div>
+</div>
+<!-- Totals -->
+<div class="pt-8 border-t border-surface-container-highest space-y-3">
+<div class="flex justify-between text-sm">
+<span class="text-on-surface-variant">Subtotal</span>
+<span class="text-primary font-medium">£2,090.00</span>
+</div>
+<div class="flex justify-between text-sm">
+<span class="text-on-surface-variant">Shipping (Express)</span>
+<span class="text-primary font-medium">£25.00</span>
+</div>
+<div class="flex justify-between text-sm">
+<span class="text-on-surface-variant">VAT (20%)</span>
+<span class="text-primary font-medium">£423.00</span>
+</div>
+<div class="flex justify-between pt-4 text-xl font-extrabold text-primary">
+<span>Total</span>
+<span>£2,538.00</span>
+</div>
+</div>
+<!-- Final CTA -->
+<button class="w-full bg-primary hover:bg-primary-container text-on-primary py-5 rounded-xl font-bold uppercase tracking-widest text-sm transition-all shadow-lg shadow-primary/20">
+                        Place Order
+                    </button>
+<div class="flex items-center justify-center gap-2 text-on-surface-variant/60">
+<span class="material-symbols-outlined text-sm" data-icon="lock">lock</span>
+<span class="text-[10px] font-bold uppercase tracking-widest">SSL Encrypted Secure Checkout</span>
+</div>
+</div>
+</aside>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full py-16 px-8 mt-24 border-t border-slate-200/50 bg-slate-50">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto">
+<div class="space-y-4">
+<div class="text-xl font-bold text-primary">CURATORIAL</div>
+<p class="font-['Inter'] text-sm tracking-wide leading-relaxed text-slate-500">
+                    Redefining the digital shopping experience through editorial precision and timeless design.
+                </p>
+</div>
+<div class="space-y-4">
+<h4 class="text-xs font-bold uppercase tracking-widest text-primary">Shop</h4>
+<nav class="flex flex-col space-y-2">
+<a class="text-sm text-slate-500 hover:text-amber-600 transition-colors" href="#">Sustainability</a>
+<a class="text-sm text-slate-500 hover:text-amber-600 transition-colors" href="#">Designers</a>
+<a class="text-sm text-slate-500 hover:text-amber-600 transition-colors" href="#">Archive</a>
+</nav>
+</div>
+<div class="space-y-4">
+<h4 class="text-xs font-bold uppercase tracking-widest text-primary">Assistance</h4>
+<nav class="flex flex-col space-y-2">
+<a class="text-sm text-slate-500 hover:text-amber-600 transition-colors" href="#">Contact</a>
+<a class="text-sm text-slate-500 hover:text-amber-600 transition-colors" href="#">Shipping &amp; Returns</a>
+</nav>
+</div>
+<div class="space-y-4">
+<h4 class="text-xs font-bold uppercase tracking-widest text-primary">Legal</h4>
+<nav class="flex flex-col space-y-2">
+<a class="text-sm text-slate-500 hover:text-amber-600 transition-colors" href="#">Privacy Policy</a>
+<a class="text-sm text-slate-500 hover:text-amber-600 transition-colors" href="#">Terms of Service</a>
+</nav>
+</div>
+</div>
+<div class="max-w-7xl mx-auto mt-16 pt-8 border-t border-slate-200/30">
+<p class="text-[10px] text-center tracking-[0.2em] font-medium text-slate-400 uppercase">
+                © 2024 THE EDITORIAL COMMERCE STANDARD. ALL RIGHTS RESERVED.
+            </p>
+</div>
+</footer>
+</body></html>
