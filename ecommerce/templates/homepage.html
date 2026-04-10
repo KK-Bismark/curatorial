@@ -91,7 +91,7 @@
 <div class="flex items-center gap-12">
 	<a class="text-2xl font-black tracking-tighter text-blue-950 dark:text-white uppercase font-headline" href="{% url 'homepage' %}">CURATORIAL</a>
 <div class="hidden md:flex gap-8">
-<a class="font-['Manrope'] tracking-tight text-sm uppercase font-semibold text-blue-950 dark:text-amber-400 border-b-2 border-amber-400 pb-1" href="#">New Arrivals</a>
+<a class="font-['Manrope'] tracking-tight text-sm uppercase font-semibold text-blue-950 dark:text-amber-400 border-b-2 border-amber-400 pb-1" href="{% url 'homepage' %}">New Arrivals</a>
 <a class="font-['Manrope'] tracking-tight text-sm uppercase font-semibold text-slate-500 dark:text-slate-400 hover:text-blue-900 transition-colors" href="#">Designers</a>
 <a class="font-['Manrope'] tracking-tight text-sm uppercase font-semibold text-slate-500 dark:text-slate-400 hover:text-blue-900 transition-colors" href="#">Editorial</a>
 <a class="font-['Manrope'] tracking-tight text-sm uppercase font-semibold text-slate-500 dark:text-slate-400 hover:text-blue-900 transition-colors" href="#">Archive</a>
@@ -195,6 +195,7 @@
 </div>
 <div class="flex overflow-x-auto hide-scrollbar gap-10 px-8 pb-12">
 <!-- Product Card 1 -->
+<a href="{% url 'product_details' %}">
 <div class="min-w-[400px] flex-shrink-0 group">
 <div class="relative aspect-[4/5] bg-white rounded-xl overflow-hidden mb-6">
 <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Oversized wool coat in charcoal grey on a minimalist model" src="https://lh3.googleusercontent.com/aida-public/AB6AXuACDKBUDaggUa-6uxXwzLl0EeR5btjrnFUxA4AXIwD08XKWV8n-DWnRQ_FwrmbxUT_4EJQejpRAMHqDhTJaGHiLWcLyU-yFnUihBevIvPJg0nzj3QW405oRX_eHy4T7vg8AUW69GNyTG1UctNUOF8azijTPwYt0j-mVmCiTFdqCZDHHhbrb2KST0EHkm09UaXssrBe-p5EWffMZess9TY2brSfwugWJKfYH5HyzDv2UY2BGIR4S3x96CikgNE1uSH9ddHkv3H8msA"/>
@@ -208,7 +209,9 @@
 <p class="font-body text-on-surface-variant">$1,850.00</p>
 </div>
 </div>
+</a>
 <!-- Product Card 2 -->
+<a href="{% url 'product_details' %}">
 <div class="min-w-[400px] flex-shrink-0 group">
 <div class="relative aspect-[4/5] bg-white rounded-xl overflow-hidden mb-6">
 <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Luxury minimalist sneakers in off-white leather" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBs8O7ihC_3-5QTkwuunaa5IZ_bDQqekeCiDTKn12UTTMW1_cMmunpqXIndKN9UAtQs4di6kPlbJMSBsEPADTN2tEVp3aYwuSlaoebAjlmHOa_IP3Wd86U_qKIYnMUjjLb530EtfUufPoRX9UfDWbsAdokKi1Q6pZ_UpvlAYnwZs3b2LMSG9bDFlBghKp7o-Oqq5twirZoRTOjzc7s334QxI_tv_Rc1Om_dpsK-zrp_aoM9jzmkzxlpPCtl5pwKWouAY0_cqPzeKA"/>
@@ -222,7 +225,9 @@
 <p class="font-body text-on-surface-variant">$890.00</p>
 </div>
 </div>
+</a>
 <!-- Product Card 3 -->
+<a href="{% url 'product_details' %}">
 <div class="min-w-[400px] flex-shrink-0 group">
 <div class="relative aspect-[4/5] bg-white rounded-xl overflow-hidden mb-6">
 <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Minimalist tan leather handbag with gold hardware details" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkklTDXflnqdU82sZoe_Q2S3BqgQqSab4T9rxsyzlUum1lyK1-SotIyeiAXWIPlQKovJGWpizfVgc2hNPeZAsSwgTLw1bxiwE3dyp90qbPXTnql731cJ3Ohw3lbcOOKJt_k8VseOfUps8FAs0Oh6TUfna0wjSiMSmTf1SGWEtFyWTFdm3qUXtRzq2RnyCV5yrVYwgYezEJKeUTLHUa7Qls7up-qdxi0I05tBMNhp2dfxhDcgaPeXRPgeAkga_toQehpJMm1bZPLA"/>
@@ -236,7 +241,9 @@
 <p class="font-body text-on-surface-variant">$1,240.00</p>
 </div>
 </div>
+</a>
 <!-- Product Card 4 -->
+<a href="{% url 'product_details' %}">
 <div class="min-w-[400px] flex-shrink-0 group">
 <div class="relative aspect-[4/5] bg-white rounded-xl overflow-hidden mb-6">
 <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Close up of high quality white t-shirt texture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCf9GgZekf28fUZEgKFkfkDOcE3l2TEsK6X4T_ssKoFU7SMpddmhycULlozVqsGwgxvuv2EyQt7hPIzDhMwjD39mIMqJZT9VyTKDGFXStSL8Vopwp0AyC2IeFmWsZUuVk4qx07_YeeUF5Y0vMIag0SQQKltS5bSQc9yqWvLeqfmKD3ReqYGKIwCPt5HNsx5ZY46x-Uw2mi20M9nINC--MDJ0gg7rH7pTc3-SvPGumSBGeLLyImu1n33lL-1NmFGrrt0RurKrGCNSA"/>
@@ -250,6 +257,7 @@
 <p class="font-body text-on-surface-variant">$185.00</p>
 </div>
 </div>
+</a>
 </div>
 </section>
 <!-- Newsletter / Editorial CTA -->
@@ -300,7 +308,7 @@
 </div>
 </div>
 <div class="max-w-7xl mx-auto mt-16 pt-8 border-t border-slate-200/30">
-<p class="text-slate-400 font-['Inter'] text-[10px] tracking-widest uppercase">© 2024 THE EDITORIAL COMMERCE STANDARD. ALL RIGHTS RESERVED.</p>
+<p class="text-slate-400 font-['Inter'] text-[10px] tracking-widest uppercase">© 2026 CURATORIAL. ALL RIGHTS RESERVED.</p>
 </div>
 </footer>
 </body></html>
