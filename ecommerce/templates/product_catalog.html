@@ -102,9 +102,9 @@
 <!-- TopNavBar -->
 <nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-xl shadow-sm shadow-blue-900/5">
 <div class="flex justify-between items-center px-8 py-4 max-w-[1920px] mx-auto">
-<div class="text-2xl font-black tracking-tighter text-blue-950 dark:text-white uppercase">CURATORIAL</div>
+<div class="text-2xl font-black tracking-tighter text-blue-950 dark:text-white uppercase"> <a href="{% url 'homepage' %}">CURATORIAL</a></div>
 <div class="hidden md:flex items-center gap-10">
-<a class="font-['Manrope'] tracking-tight text-sm uppercase font-semibold text-slate-500 dark:text-slate-400 hover:text-blue-900 transition-colors" href="#">New Arrivals</a>
+<a class="font-['Manrope'] tracking-tight text-sm uppercase font-semibold text-slate-500 dark:text-slate-400 hover:text-blue-900 transition-colors" href="{% url 'homepage' %}">New Arrivals</a>
 <a class="font-['Manrope'] tracking-tight text-sm uppercase font-semibold text-slate-500 dark:text-slate-400 hover:text-blue-900 transition-colors" href="#">Designers</a>
 <a class="font-['Manrope'] tracking-tight text-sm uppercase font-semibold text-slate-500 dark:text-slate-400 hover:text-blue-900 transition-colors" href="#">Editorial</a>
 <a class="font-['Manrope'] tracking-tight text-sm uppercase font-semibold text-blue-950 dark:text-amber-400 border-b-2 border-amber-400 pb-1" href="#">Archive</a>
