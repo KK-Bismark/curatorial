@@ -86,229 +86,232 @@
 </head>
 <body class="bg-surface text-on-surface font-body selection:bg-secondary-fixed selection:text-on-secondary-fixed">
 <!-- TopNavBar -->
-<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-xl shadow-sm shadow-blue-900/5">
-<div class="flex justify-between items-center px-8 py-4 max-w-[1920px] mx-auto">
-<div class="flex items-center gap-12">
-	<a class="text-2xl font-black tracking-tighter text-blue-950 dark:text-white uppercase font-headline" href="{% url 'homepage' %}">CURATORIAL</a>
-<div class="hidden md:flex gap-8">
-<a class="font-['Manrope'] tracking-tight text-sm uppercase font-semibold text-blue-950 dark:text-amber-400 border-b-2 border-amber-400 pb-1" href="{% url 'homepage' %}">New Arrivals</a>
-<a class="font-['Manrope'] tracking-tight text-sm uppercase font-semibold text-slate-500 dark:text-slate-400 hover:text-blue-900 transition-colors" href="#">Designers</a>
-<a class="font-['Manrope'] tracking-tight text-sm uppercase font-semibold text-slate-500 dark:text-slate-400 hover:text-blue-900 transition-colors" href="#">Editorial</a>
-<a class="font-['Manrope'] tracking-tight text-sm uppercase font-semibold text-slate-500 dark:text-slate-400 hover:text-blue-900 transition-colors" href="#">Archive</a>
-</div>
-</div>
-<div class="flex items-center gap-6">
-<div class="hidden lg:flex items-center bg-surface-container-high rounded-full px-4 py-1.5 gap-2 text-on-surface-variant">
-<span class="material-symbols-outlined text-[20px]">search</span>
-<input class="bg-transparent border-none focus:ring-0 text-sm font-label tracking-wide uppercase" placeholder="Search archive..." type="text"/>
-</div>
-<div class="flex gap-4">
-	<a href="{% url 'shopping_cart' %}">
-<button class="hover:bg-slate-50/50 dark:hover:bg-slate-900/50 transition-all duration-300 p-2 rounded-full">
-<span class="material-symbols-outlined text-blue-900 dark:text-blue-200">shopping_bag</span>
-</button>
-<button class="hover:bg-slate-50/50 dark:hover:bg-slate-900/50 transition-all duration-300 p-2 rounded-full">
-<span class="material-symbols-outlined text-blue-900 dark:text-blue-200">person</span>
-</button>
-</div>
-</div>
-</div>
-</nav>
-<main class="pt-20">
-<!-- Hero Section -->
-<section class="relative h-[921px] w-full overflow-hidden flex items-center">
-<div class="absolute inset-0 z-0">
-<img class="w-full h-full object-cover" data-alt="High-end fashion editorial shot of a model in architectural tailoring against a minimalist neutral studio background with soft dramatic shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFYQd1plN118Q7ELb_p8QzGZ9FsXGNufOhsIoHUhEvMZXAB03NWJ1W44qr8cE-UpcqOZvnpt-uozIh1iBV5xHzCRpAjHxrmBeLNBelk6Wo5uVKEwB0XdK0Z0x-HwDtGOwTuhUJbHTv88alnriEXkrUlmlmMhlyhf1JL7qAWRE_zYe001H02H1oBjvUXmzW3E8Hm6wlL8t5HqtIxFtirvnC4XFbsaB0eKkZHBKWxiwUgOJ2ZV2auo2MZ3M4x3f-60YRyvbf5pk5vA"/>
-<div class="absolute inset-0 bg-gradient-to-r from-primary/40 to-transparent"></div>
-</div>
-<div class="relative z-10 max-w-7xl mx-auto px-8 w-full">
-<div class="max-w-2xl">
-<span class="inline-block font-label text-sm tracking-[0.2em] text-white/90 uppercase mb-4">Edition 04 / Autumn-Winter</span>
-<h1 class="font-headline text-7xl md:text-8xl font-extrabold text-white leading-tight tracking-tighter mb-8">
-                        The <span class="italic font-light">Structured</span> <br/>Dialogue.
-                    </h1>
-<p class="font-body text-xl text-white/80 leading-relaxed mb-10 max-w-lg">
-                        An exploration of form and silhouette, curated for the discerning eye. Our new arrivals redefine the seasonal wardrobe through architectural precision.
+  <nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-xl shadow-sm shadow-blue-900/5">
+    <div class="flex justify-between items-center px-8 py-4 max-w-[1920px] mx-auto">
+      <div class="flex items-center gap-12">
+	      <a class="text-2xl font-black tracking-tighter text-blue-950 dark:text-white uppercase font-headline" href="{% url 'homepage' %}">CURATORIAL</a>
+        <div class="hidden md:flex gap-8">
+          <a class="font-['Manrope'] tracking-tight text-sm uppercase font-semibold text-blue-950 dark:text-amber-400 border-b-2 border-amber-400 pb-1" href="{% url 'homepage' %}">New Arrivals</a>
+          <a class="font-['Manrope'] tracking-tight text-sm uppercase font-semibold text-slate-500 dark:text-slate-400 hover:text-blue-900 transition-colors" href="#">Designers</a>
+          <a class="font-['Manrope'] tracking-tight text-sm uppercase font-semibold text-slate-500 dark:text-slate-400 hover:text-blue-900 transition-colors" href="#">Editorial</a>
+          <a class="font-['Manrope'] tracking-tight text-sm uppercase font-semibold text-slate-500 dark:text-slate-400 hover:text-blue-900 transition-colors" href="#">Archive</a>
+        </div>
+      </div>
+      <div class="flex items-center gap-6">
+        <div class="hidden lg:flex items-center bg-surface-container-high rounded-full px-4 py-1.5 gap-2 text-on-surface-variant">
+          <span class="material-symbols-outlined text-[20px]">search</span>
+            <input class="bg-transparent border-none focus:ring-0 text-sm font-label tracking-wide uppercase" placeholder="Search archive..." type="text"/>
+        </div>
+        <div class="flex gap-4">
+          <a href="{% url 'shopping_cart' %}">
+            <button class="hover:bg-slate-50/50 dark:hover:bg-slate-900/50 transition-all duration-300 p-2 rounded-full">
+              <span class="material-symbols-outlined text-blue-900 dark:text-blue-200">shopping_bag</span>
+            </button>
+          </a>
+          <a href="">
+            <button class="hover:bg-slate-50/50 dark:hover:bg-slate-900/50 transition-all duration-300 p-2 rounded-full">
+              <span class="material-symbols-outlined text-blue-900 dark:text-blue-200">person</span>
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <main class="pt-20">
+    <!-- Hero Section -->
+    <section class="relative h-[921px] w-full overflow-hidden flex items-center">
+    <div class="absolute inset-0 z-0">
+    <img class="w-full h-full object-cover" data-alt="High-end fashion editorial shot of a model in architectural tailoring against a minimalist neutral studio background with soft dramatic shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFYQd1plN118Q7ELb_p8QzGZ9FsXGNufOhsIoHUhEvMZXAB03NWJ1W44qr8cE-UpcqOZvnpt-uozIh1iBV5xHzCRpAjHxrmBeLNBelk6Wo5uVKEwB0XdK0Z0x-HwDtGOwTuhUJbHTv88alnriEXkrUlmlmMhlyhf1JL7qAWRE_zYe001H02H1oBjvUXmzW3E8Hm6wlL8t5HqtIxFtirvnC4XFbsaB0eKkZHBKWxiwUgOJ2ZV2auo2MZ3M4x3f-60YRyvbf5pk5vA"/>
+    <div class="absolute inset-0 bg-gradient-to-r from-primary/40 to-transparent"></div>
+    </div>
+    <div class="relative z-10 max-w-7xl mx-auto px-8 w-full">
+    <div class="max-w-2xl">
+    <span class="inline-block font-label text-sm tracking-[0.2em] text-white/90 uppercase mb-4">Edition 04 / Autumn-Winter</span>
+    <h1 class="font-headline text-7xl md:text-8xl font-extrabold text-white leading-tight tracking-tighter mb-8">
+                            The <span class="italic font-light">Structured</span> <br/>Dialogue.
+                        </h1>
+    <p class="font-body text-xl text-white/80 leading-relaxed mb-10 max-w-lg">
+                            An exploration of form and silhouette, curated for the discerning eye. Our new arrivals redefine the seasonal wardrobe through architectural precision.
+                        </p>
+    <div class="flex gap-4">
+    <button class="bg-primary text-on-primary px-10 py-5 rounded-md font-headline font-bold uppercase tracking-widest text-sm hover:bg-primary-container transition-all">
+                                Shop The Collection
+                            </button>
+    <button class="bg-white/10 backdrop-blur-md text-white border border-white/20 px-10 py-5 rounded-md font-headline font-bold uppercase tracking-widest text-sm hover:bg-white/20 transition-all">
+                                Read Editorial
+                            </button>
+    </div>
+    </div>
+    </div>
+    </section>
+    <!-- Featured Collections (Asymmetric Bento Grid) -->
+    <section class="py-32 px-8 max-w-[1440px] mx-auto">
+    <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+    <div class="max-w-xl">
+    <h2 class="font-headline text-5xl font-extrabold text-primary mb-6">Featured Collections</h2>
+    <p class="font-body text-on-surface-variant text-lg">Curated selections that define the current mood of high fashion, from minimalist essentials to avant-garde statement pieces.</p>
+    </div>
+    <a class="font-label text-sm font-bold uppercase tracking-widest text-primary border-b-2 border-secondary pb-1" href="#">View All Curation</a>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-8 auto-rows-[300px]">
+    <!-- Large Feature -->
+    <div class="md:col-span-8 md:row-span-2 group relative overflow-hidden rounded-xl bg-surface-container-low">
+    <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Minimalist luxury clothing rack in a clean white studio with soft natural light and warm shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCT6vsPMqMdig4hCGnbcrQS6ceMyIHpmEXxwUqyG22Hrt4vK3IK2P3QAKZnqarIRi-_hpRaMyT31uXN2pXyKco-OSuHTM3XGjuLEakPgY-xRpyqDV83IutisQSNzkpAfJkgB0IlF_1Iuyu_7gQgTryzsS9_jCIwQZN6Qy5ugyADPIA7yUAX-OG2bsZ6QWS2SQ8_IwLzNBNeg9HULurD-fY1fzlcOjOuW1OsFiajQw8tiDmIghs_IjfAk7jhb2I5laNsprGBv8MdZg"/>
+    <div class="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+    <div class="absolute bottom-8 left-8">
+    <h3 class="text-white text-3xl font-headline font-bold mb-2">Modernist Essentials</h3>
+    <p class="text-white/80 font-body">The foundation of the digital curator's wardrobe.</p>
+    </div>
+    </div>
+    <!-- Tall Feature -->
+    <div class="md:col-span-4 md:row-span-3 group relative overflow-hidden rounded-xl bg-surface-container-low">
+    <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Close-up of high-quality leather accessories and jewelry on a textured limestone surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDF9dGUNMEMFUAgV1Y00k_QtKJRyxfuHDRtaG5d-K26o_R69cCp-ANPgoGghXOOfV7vdNOsxXeao6JnUp5W8n8Az1iMKOEFxGAaIpRSQPrRsQB6HI1c7W6ssObZR0WVaT4Az2ah5AJa1GBulFW9rGNcv6a7pEMzIMIg1RTTcDLU7G5BPlX8J6745iVukBeOGoaf4Qpp8L4j6TSwdw-94LCwD05GfiC2jyRvKchmaxXd67PGSJNb5GqRG-vEsJDexdSYPHoKrUkLkw"/>
+    <div class="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+    <div class="absolute bottom-8 left-8">
+    <h3 class="text-white text-2xl font-headline font-bold mb-2">Refined Artifacts</h3>
+    <p class="text-white/80 font-body">Jewelry and accessories as art.</p>
+    </div>
+    </div>
+    <!-- Wide Small -->
+    <div class="md:col-span-4 md:row-span-1 group relative overflow-hidden rounded-xl bg-surface-container-low">
+    <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Editorial fashion photography of luxury textiles and folded knitwear in neutral tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYLCnjUBdwMkOmVDYkzsUJeel6JJ2S3TIf11TTxFLhG_lv_e6OuSyGd3AX5N9L8yTqVuWiBsEtZw9t_IBvk7qwW8YR3MurwHy12pF9hj92VeGMk_aLCgC1esS7z0pCxYz67dAd9IZigtzl_lE9XRCySulpvYvVk7NSgtvEmBW46u2R3tFtQ35io_nyY5pUg65Cdioz4k0U0MThxGVRumQVLUbbZ_amIJfjgspdtqTI29CvQ8q-sdF_zGPXzdFjPflZnwFW7N6bpw"/>
+    <div class="absolute inset-0 flex items-center justify-center bg-primary/20 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-all duration-300">
+    <span class="bg-white text-primary font-headline font-bold py-3 px-6 rounded-md text-sm uppercase tracking-widest">The Knitwear Edit</span>
+    </div>
+    </div>
+    <!-- Wide Small -->
+    <div class="md:col-span-4 md:row-span-1 group relative overflow-hidden rounded-xl bg-surface-container-low">
+    <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="High-end beauty products and perfume bottles on a glass shelf with reflective light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0XRGuCbQ0piBlgd6I7EDulerOIAE-t7b7CRJpeUyRNvybGab6hQxVWwhlithCy_xejSF-YXRNncqTuq7vuQcaymUCaawB779T6RWJpHQwsSLJy7bqymRxeYadR39ZMSj8JcDns-3qKkMr29lIPiPHjrA3_MwYHAVl4iCbwq8dP4_LzaTJWL_U91madg1OXHS01nZPOJZ_0ZukJZiSjoIXv5Ft5GwaZcP2I_qOQae9yqcHCZoGXvN06_HLNQnhE6D2Gz1sQGlJtg"/>
+    <div class="absolute inset-0 flex items-center justify-center bg-primary/20 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-all duration-300">
+    <span class="bg-white text-primary font-headline font-bold py-3 px-6 rounded-md text-sm uppercase tracking-widest">Curated Objects</span>
+    </div>
+    </div>
+    </div>
+    </section>
+    <!-- Trending Now (Horizontal Scroll) -->
+    <section class="bg-surface-container-low py-32 overflow-hidden">
+    <div class="max-w-[1440px] mx-auto px-8 mb-16">
+    <div class="flex items-baseline gap-4">
+    <h2 class="font-headline text-5xl font-extrabold text-primary">Trending Now</h2>
+    <span class="w-12 h-1 bg-secondary block"></span>
+    </div>
+    </div>
+    <div class="flex overflow-x-auto hide-scrollbar gap-10 px-8 pb-12">
+    <!-- Product Card 1 -->
+    <a href="{% url 'product_details' %}">
+    <div class="min-w-[400px] flex-shrink-0 group">
+    <div class="relative aspect-[4/5] bg-white rounded-xl overflow-hidden mb-6">
+    <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Oversized wool coat in charcoal grey on a minimalist model" src="https://lh3.googleusercontent.com/aida-public/AB6AXuACDKBUDaggUa-6uxXwzLl0EeR5btjrnFUxA4AXIwD08XKWV8n-DWnRQ_FwrmbxUT_4EJQejpRAMHqDhTJaGHiLWcLyU-yFnUihBevIvPJg0nzj3QW405oRX_eHy4T7vg8AUW69GNyTG1UctNUOF8azijTPwYt0j-mVmCiTFdqCZDHHhbrb2KST0EHkm09UaXssrBe-p5EWffMZess9TY2brSfwugWJKfYH5HyzDv2UY2BGIR4S3x96CikgNE1uSH9ddHkv3H8msA"/>
+    <button class="absolute bottom-6 right-6 bg-primary text-on-primary w-14 h-14 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300 shadow-xl">
+    <span class="material-symbols-outlined">add_shopping_cart</span>
+    </button>
+    </div>
+    <div>
+    <span class="font-label text-xs tracking-widest text-on-surface-variant uppercase mb-2 block">Lemaire</span>
+    <h4 class="font-headline text-xl font-bold text-primary mb-1">Architectural Wool Overcoat</h4>
+    <p class="font-body text-on-surface-variant">$1,850.00</p>
+    </div>
+    </div>
+    </a>
+    <!-- Product Card 2 -->
+    <a href="{% url 'product_details' %}">
+    <div class="min-w-[400px] flex-shrink-0 group">
+    <div class="relative aspect-[4/5] bg-white rounded-xl overflow-hidden mb-6">
+    <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Luxury minimalist sneakers in off-white leather" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBs8O7ihC_3-5QTkwuunaa5IZ_bDQqekeCiDTKn12UTTMW1_cMmunpqXIndKN9UAtQs4di6kPlbJMSBsEPADTN2tEVp3aYwuSlaoebAjlmHOa_IP3Wd86U_qKIYnMUjjLb530EtfUufPoRX9UfDWbsAdokKi1Q6pZ_UpvlAYnwZs3b2LMSG9bDFlBghKp7o-Oqq5twirZoRTOjzc7s334QxI_tv_Rc1Om_dpsK-zrp_aoM9jzmkzxlpPCtl5pwKWouAY0_cqPzeKA"/>
+    <button class="absolute bottom-6 right-6 bg-primary text-on-primary w-14 h-14 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300 shadow-xl">
+    <span class="material-symbols-outlined">add_shopping_cart</span>
+    </button>
+    </div>
+    <div>
+    <span class="font-label text-xs tracking-widest text-on-surface-variant uppercase mb-2 block">The Row</span>
+    <h4 class="font-headline text-xl font-bold text-primary mb-1">Nappa Leather Studio Shoe</h4>
+    <p class="font-body text-on-surface-variant">$890.00</p>
+    </div>
+    </div>
+    </a>
+    <!-- Product Card 3 -->
+    <a href="{% url 'product_details' %}">
+    <div class="min-w-[400px] flex-shrink-0 group">
+    <div class="relative aspect-[4/5] bg-white rounded-xl overflow-hidden mb-6">
+    <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Minimalist tan leather handbag with gold hardware details" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkklTDXflnqdU82sZoe_Q2S3BqgQqSab4T9rxsyzlUum1lyK1-SotIyeiAXWIPlQKovJGWpizfVgc2hNPeZAsSwgTLw1bxiwE3dyp90qbPXTnql731cJ3Ohw3lbcOOKJt_k8VseOfUps8FAs0Oh6TUfna0wjSiMSmTf1SGWEtFyWTFdm3qUXtRzq2RnyCV5yrVYwgYezEJKeUTLHUa7Qls7up-qdxi0I05tBMNhp2dfxhDcgaPeXRPgeAkga_toQehpJMm1bZPLA"/>
+    <button class="absolute bottom-6 right-6 bg-primary text-on-primary w-14 h-14 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300 shadow-xl">
+    <span class="material-symbols-outlined">add_shopping_cart</span>
+    </button>
+    </div>
+    <div>
+    <span class="font-label text-xs tracking-widest text-on-surface-variant uppercase mb-2 block">Jil Sander</span>
+    <h4 class="font-headline text-xl font-bold text-primary mb-1">Crescent Moon Crossbody</h4>
+    <p class="font-body text-on-surface-variant">$1,240.00</p>
+    </div>
+    </div>
+    </a>
+    <!-- Product Card 4 -->
+    <a href="{% url 'product_details' %}">
+    <div class="min-w-[400px] flex-shrink-0 group">
+    <div class="relative aspect-[4/5] bg-white rounded-xl overflow-hidden mb-6">
+    <img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Close up of high quality white t-shirt texture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCf9GgZekf28fUZEgKFkfkDOcE3l2TEsK6X4T_ssKoFU7SMpddmhycULlozVqsGwgxvuv2EyQt7hPIzDhMwjD39mIMqJZT9VyTKDGFXStSL8Vopwp0AyC2IeFmWsZUuVk4qx07_YeeUF5Y0vMIag0SQQKltS5bSQc9yqWvLeqfmKD3ReqYGKIwCPt5HNsx5ZY46x-Uw2mi20M9nINC--MDJ0gg7rH7pTc3-SvPGumSBGeLLyImu1n33lL-1NmFGrrt0RurKrGCNSA"/>
+    <button class="absolute bottom-6 right-6 bg-primary text-on-primary w-14 h-14 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300 shadow-xl">
+    <span class="material-symbols-outlined">add_shopping_cart</span>
+    </button>
+    </div>
+    <div>
+    <span class="font-label text-xs tracking-widest text-on-surface-variant uppercase mb-2 block">Studio Nicholson</span>
+    <h4 class="font-headline text-xl font-bold text-primary mb-1">Heavy Cotton Box Tee</h4>
+    <p class="font-body text-on-surface-variant">$185.00</p>
+    </div>
+    </div>
+    </a>
+    </div>
+    </section>
+    <!-- Newsletter / Editorial CTA -->
+    <section class="py-32 px-8">
+    <div class="max-w-4xl mx-auto text-center">
+    <span class="material-symbols-outlined text-secondary text-5xl mb-8" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
+    <h2 class="font-headline text-5xl md:text-6xl font-black text-primary mb-8 tracking-tighter uppercase">The Weekly Curatorial</h2>
+    <p class="font-body text-on-surface-variant text-xl leading-relaxed mb-12">
+                        Insights from the world of design, architecture, and luxury. Join our community of digital curators for early access to limited archival drops and editorial deep-dives.
                     </p>
-<div class="flex gap-4">
-<button class="bg-primary text-on-primary px-10 py-5 rounded-md font-headline font-bold uppercase tracking-widest text-sm hover:bg-primary-container transition-all">
-                            Shop The Collection
-                        </button>
-<button class="bg-white/10 backdrop-blur-md text-white border border-white/20 px-10 py-5 rounded-md font-headline font-bold uppercase tracking-widest text-sm hover:bg-white/20 transition-all">
-                            Read Editorial
-                        </button>
-</div>
-</div>
-</div>
-</section>
-<!-- Featured Collections (Asymmetric Bento Grid) -->
-<section class="py-32 px-8 max-w-[1440px] mx-auto">
-<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
-<div class="max-w-xl">
-<h2 class="font-headline text-5xl font-extrabold text-primary mb-6">Featured Collections</h2>
-<p class="font-body text-on-surface-variant text-lg">Curated selections that define the current mood of high fashion, from minimalist essentials to avant-garde statement pieces.</p>
-</div>
-<a class="font-label text-sm font-bold uppercase tracking-widest text-primary border-b-2 border-secondary pb-1" href="#">View All Curation</a>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-12 gap-8 auto-rows-[300px]">
-<!-- Large Feature -->
-<div class="md:col-span-8 md:row-span-2 group relative overflow-hidden rounded-xl bg-surface-container-low">
-<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Minimalist luxury clothing rack in a clean white studio with soft natural light and warm shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCT6vsPMqMdig4hCGnbcrQS6ceMyIHpmEXxwUqyG22Hrt4vK3IK2P3QAKZnqarIRi-_hpRaMyT31uXN2pXyKco-OSuHTM3XGjuLEakPgY-xRpyqDV83IutisQSNzkpAfJkgB0IlF_1Iuyu_7gQgTryzsS9_jCIwQZN6Qy5ugyADPIA7yUAX-OG2bsZ6QWS2SQ8_IwLzNBNeg9HULurD-fY1fzlcOjOuW1OsFiajQw8tiDmIghs_IjfAk7jhb2I5laNsprGBv8MdZg"/>
-<div class="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-<div class="absolute bottom-8 left-8">
-<h3 class="text-white text-3xl font-headline font-bold mb-2">Modernist Essentials</h3>
-<p class="text-white/80 font-body">The foundation of the digital curator's wardrobe.</p>
-</div>
-</div>
-<!-- Tall Feature -->
-<div class="md:col-span-4 md:row-span-3 group relative overflow-hidden rounded-xl bg-surface-container-low">
-<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Close-up of high-quality leather accessories and jewelry on a textured limestone surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDF9dGUNMEMFUAgV1Y00k_QtKJRyxfuHDRtaG5d-K26o_R69cCp-ANPgoGghXOOfV7vdNOsxXeao6JnUp5W8n8Az1iMKOEFxGAaIpRSQPrRsQB6HI1c7W6ssObZR0WVaT4Az2ah5AJa1GBulFW9rGNcv6a7pEMzIMIg1RTTcDLU7G5BPlX8J6745iVukBeOGoaf4Qpp8L4j6TSwdw-94LCwD05GfiC2jyRvKchmaxXd67PGSJNb5GqRG-vEsJDexdSYPHoKrUkLkw"/>
-<div class="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-<div class="absolute bottom-8 left-8">
-<h3 class="text-white text-2xl font-headline font-bold mb-2">Refined Artifacts</h3>
-<p class="text-white/80 font-body">Jewelry and accessories as art.</p>
-</div>
-</div>
-<!-- Wide Small -->
-<div class="md:col-span-4 md:row-span-1 group relative overflow-hidden rounded-xl bg-surface-container-low">
-<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Editorial fashion photography of luxury textiles and folded knitwear in neutral tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCYLCnjUBdwMkOmVDYkzsUJeel6JJ2S3TIf11TTxFLhG_lv_e6OuSyGd3AX5N9L8yTqVuWiBsEtZw9t_IBvk7qwW8YR3MurwHy12pF9hj92VeGMk_aLCgC1esS7z0pCxYz67dAd9IZigtzl_lE9XRCySulpvYvVk7NSgtvEmBW46u2R3tFtQ35io_nyY5pUg65Cdioz4k0U0MThxGVRumQVLUbbZ_amIJfjgspdtqTI29CvQ8q-sdF_zGPXzdFjPflZnwFW7N6bpw"/>
-<div class="absolute inset-0 flex items-center justify-center bg-primary/20 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-all duration-300">
-<span class="bg-white text-primary font-headline font-bold py-3 px-6 rounded-md text-sm uppercase tracking-widest">The Knitwear Edit</span>
-</div>
-</div>
-<!-- Wide Small -->
-<div class="md:col-span-4 md:row-span-1 group relative overflow-hidden rounded-xl bg-surface-container-low">
-<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="High-end beauty products and perfume bottles on a glass shelf with reflective light" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0XRGuCbQ0piBlgd6I7EDulerOIAE-t7b7CRJpeUyRNvybGab6hQxVWwhlithCy_xejSF-YXRNncqTuq7vuQcaymUCaawB779T6RWJpHQwsSLJy7bqymRxeYadR39ZMSj8JcDns-3qKkMr29lIPiPHjrA3_MwYHAVl4iCbwq8dP4_LzaTJWL_U91madg1OXHS01nZPOJZ_0ZukJZiSjoIXv5Ft5GwaZcP2I_qOQae9yqcHCZoGXvN06_HLNQnhE6D2Gz1sQGlJtg"/>
-<div class="absolute inset-0 flex items-center justify-center bg-primary/20 backdrop-blur-[2px] opacity-0 group-hover:opacity-100 transition-all duration-300">
-<span class="bg-white text-primary font-headline font-bold py-3 px-6 rounded-md text-sm uppercase tracking-widest">Curated Objects</span>
-</div>
-</div>
-</div>
-</section>
-<!-- Trending Now (Horizontal Scroll) -->
-<section class="bg-surface-container-low py-32 overflow-hidden">
-<div class="max-w-[1440px] mx-auto px-8 mb-16">
-<div class="flex items-baseline gap-4">
-<h2 class="font-headline text-5xl font-extrabold text-primary">Trending Now</h2>
-<span class="w-12 h-1 bg-secondary block"></span>
-</div>
-</div>
-<div class="flex overflow-x-auto hide-scrollbar gap-10 px-8 pb-12">
-<!-- Product Card 1 -->
-<a href="{% url 'product_details' %}">
-<div class="min-w-[400px] flex-shrink-0 group">
-<div class="relative aspect-[4/5] bg-white rounded-xl overflow-hidden mb-6">
-<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Oversized wool coat in charcoal grey on a minimalist model" src="https://lh3.googleusercontent.com/aida-public/AB6AXuACDKBUDaggUa-6uxXwzLl0EeR5btjrnFUxA4AXIwD08XKWV8n-DWnRQ_FwrmbxUT_4EJQejpRAMHqDhTJaGHiLWcLyU-yFnUihBevIvPJg0nzj3QW405oRX_eHy4T7vg8AUW69GNyTG1UctNUOF8azijTPwYt0j-mVmCiTFdqCZDHHhbrb2KST0EHkm09UaXssrBe-p5EWffMZess9TY2brSfwugWJKfYH5HyzDv2UY2BGIR4S3x96CikgNE1uSH9ddHkv3H8msA"/>
-<button class="absolute bottom-6 right-6 bg-primary text-on-primary w-14 h-14 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300 shadow-xl">
-<span class="material-symbols-outlined">add_shopping_cart</span>
-</button>
-</div>
-<div>
-<span class="font-label text-xs tracking-widest text-on-surface-variant uppercase mb-2 block">Lemaire</span>
-<h4 class="font-headline text-xl font-bold text-primary mb-1">Architectural Wool Overcoat</h4>
-<p class="font-body text-on-surface-variant">$1,850.00</p>
-</div>
-</div>
-</a>
-<!-- Product Card 2 -->
-<a href="{% url 'product_details' %}">
-<div class="min-w-[400px] flex-shrink-0 group">
-<div class="relative aspect-[4/5] bg-white rounded-xl overflow-hidden mb-6">
-<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Luxury minimalist sneakers in off-white leather" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBs8O7ihC_3-5QTkwuunaa5IZ_bDQqekeCiDTKn12UTTMW1_cMmunpqXIndKN9UAtQs4di6kPlbJMSBsEPADTN2tEVp3aYwuSlaoebAjlmHOa_IP3Wd86U_qKIYnMUjjLb530EtfUufPoRX9UfDWbsAdokKi1Q6pZ_UpvlAYnwZs3b2LMSG9bDFlBghKp7o-Oqq5twirZoRTOjzc7s334QxI_tv_Rc1Om_dpsK-zrp_aoM9jzmkzxlpPCtl5pwKWouAY0_cqPzeKA"/>
-<button class="absolute bottom-6 right-6 bg-primary text-on-primary w-14 h-14 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300 shadow-xl">
-<span class="material-symbols-outlined">add_shopping_cart</span>
-</button>
-</div>
-<div>
-<span class="font-label text-xs tracking-widest text-on-surface-variant uppercase mb-2 block">The Row</span>
-<h4 class="font-headline text-xl font-bold text-primary mb-1">Nappa Leather Studio Shoe</h4>
-<p class="font-body text-on-surface-variant">$890.00</p>
-</div>
-</div>
-</a>
-<!-- Product Card 3 -->
-<a href="{% url 'product_details' %}">
-<div class="min-w-[400px] flex-shrink-0 group">
-<div class="relative aspect-[4/5] bg-white rounded-xl overflow-hidden mb-6">
-<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Minimalist tan leather handbag with gold hardware details" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkklTDXflnqdU82sZoe_Q2S3BqgQqSab4T9rxsyzlUum1lyK1-SotIyeiAXWIPlQKovJGWpizfVgc2hNPeZAsSwgTLw1bxiwE3dyp90qbPXTnql731cJ3Ohw3lbcOOKJt_k8VseOfUps8FAs0Oh6TUfna0wjSiMSmTf1SGWEtFyWTFdm3qUXtRzq2RnyCV5yrVYwgYezEJKeUTLHUa7Qls7up-qdxi0I05tBMNhp2dfxhDcgaPeXRPgeAkga_toQehpJMm1bZPLA"/>
-<button class="absolute bottom-6 right-6 bg-primary text-on-primary w-14 h-14 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300 shadow-xl">
-<span class="material-symbols-outlined">add_shopping_cart</span>
-</button>
-</div>
-<div>
-<span class="font-label text-xs tracking-widest text-on-surface-variant uppercase mb-2 block">Jil Sander</span>
-<h4 class="font-headline text-xl font-bold text-primary mb-1">Crescent Moon Crossbody</h4>
-<p class="font-body text-on-surface-variant">$1,240.00</p>
-</div>
-</div>
-</a>
-<!-- Product Card 4 -->
-<a href="{% url 'product_details' %}">
-<div class="min-w-[400px] flex-shrink-0 group">
-<div class="relative aspect-[4/5] bg-white rounded-xl overflow-hidden mb-6">
-<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Close up of high quality white t-shirt texture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCf9GgZekf28fUZEgKFkfkDOcE3l2TEsK6X4T_ssKoFU7SMpddmhycULlozVqsGwgxvuv2EyQt7hPIzDhMwjD39mIMqJZT9VyTKDGFXStSL8Vopwp0AyC2IeFmWsZUuVk4qx07_YeeUF5Y0vMIag0SQQKltS5bSQc9yqWvLeqfmKD3ReqYGKIwCPt5HNsx5ZY46x-Uw2mi20M9nINC--MDJ0gg7rH7pTc3-SvPGumSBGeLLyImu1n33lL-1NmFGrrt0RurKrGCNSA"/>
-<button class="absolute bottom-6 right-6 bg-primary text-on-primary w-14 h-14 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 transition-all duration-300 shadow-xl">
-<span class="material-symbols-outlined">add_shopping_cart</span>
-</button>
-</div>
-<div>
-<span class="font-label text-xs tracking-widest text-on-surface-variant uppercase mb-2 block">Studio Nicholson</span>
-<h4 class="font-headline text-xl font-bold text-primary mb-1">Heavy Cotton Box Tee</h4>
-<p class="font-body text-on-surface-variant">$185.00</p>
-</div>
-</div>
-</a>
-</div>
-</section>
-<!-- Newsletter / Editorial CTA -->
-<section class="py-32 px-8">
-<div class="max-w-4xl mx-auto text-center">
-<span class="material-symbols-outlined text-secondary text-5xl mb-8" style="font-variation-settings: 'FILL' 1;">auto_awesome</span>
-<h2 class="font-headline text-5xl md:text-6xl font-black text-primary mb-8 tracking-tighter uppercase">The Weekly Curatorial</h2>
-<p class="font-body text-on-surface-variant text-xl leading-relaxed mb-12">
-                    Insights from the world of design, architecture, and luxury. Join our community of digital curators for early access to limited archival drops and editorial deep-dives.
-                </p>
-<div class="flex flex-col md:flex-row gap-4 max-w-lg mx-auto">
-<input class="flex-1 bg-surface-container-highest border-none rounded-md px-6 py-4 font-label text-sm tracking-widest uppercase focus:bg-surface-container-lowest transition-all" placeholder="YOUR EMAIL ADDRESS" type="email"/>
-<button class="bg-primary text-on-primary px-8 py-4 rounded-md font-headline font-bold uppercase tracking-widest text-sm hover:bg-primary-container transition-all">Subscribe</button>
-</div>
-</div>
-</section>
-</main>
-<!-- Footer -->
-<footer class="w-full py-16 px-8 mt-24 border-t border-slate-200/50 dark:border-slate-800/50 bg-slate-50 dark:bg-slate-950">
-<div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto">
-<div class="flex flex-col gap-6">
-<div class="text-xl font-bold text-blue-950 dark:text-white uppercase font-headline">CURATORIAL</div>
-<p class="text-slate-500 dark:text-slate-400 font-['Inter'] text-sm tracking-wide leading-relaxed">Defining the digital frontier of high-end editorial commerce. A standard for the modern curator.</p>
-</div>
-<div class="flex flex-col gap-4">
-<h5 class="font-headline text-xs font-bold text-blue-950 dark:text-white uppercase tracking-widest">Navigation</h5>
-<div class="flex flex-col gap-2">
-<a class="text-slate-500 dark:text-slate-400 hover:text-amber-600 dark:hover:text-amber-400 transition-colors font-['Inter'] text-sm tracking-wide leading-relaxed" href="#">New Arrivals</a>
-<a class="text-slate-500 dark:text-slate-400 hover:text-amber-600 dark:hover:text-amber-400 transition-colors font-['Inter'] text-sm tracking-wide leading-relaxed" href="#">Designers</a>
-<a class="text-slate-500 dark:text-slate-400 hover:text-amber-600 dark:hover:text-amber-400 transition-colors font-['Inter'] text-sm tracking-wide leading-relaxed" href="#">Editorial</a>
-<a class="text-slate-500 dark:text-slate-400 hover:text-amber-600 dark:hover:text-amber-400 transition-colors font-['Inter'] text-sm tracking-wide leading-relaxed" href="#">Archive</a>
-</div>
-</div>
-<div class="flex flex-col gap-4">
-<h5 class="font-headline text-xs font-bold text-blue-950 dark:text-white uppercase tracking-widest">Support</h5>
-<div class="flex flex-col gap-2">
-<a class="text-slate-500 dark:text-slate-400 hover:text-amber-600 dark:hover:text-amber-400 transition-colors font-['Inter'] text-sm tracking-wide leading-relaxed" href="#">Sustainability</a>
-<a class="text-slate-500 dark:text-slate-400 hover:text-amber-600 dark:hover:text-amber-400 transition-colors font-['Inter'] text-sm tracking-wide leading-relaxed" href="#">Contact</a>
-<a class="text-slate-500 dark:text-slate-400 hover:text-amber-600 dark:hover:text-amber-400 transition-colors font-['Inter'] text-sm tracking-wide leading-relaxed" href="#">Shipping &amp; Returns</a>
-</div>
-</div>
-<div class="flex flex-col gap-4">
-<h5 class="font-headline text-xs font-bold text-blue-950 dark:text-white uppercase tracking-widest">Legal</h5>
-<div class="flex flex-col gap-2">
-<a class="text-slate-500 dark:text-slate-400 hover:text-amber-600 dark:hover:text-amber-400 transition-colors font-['Inter'] text-sm tracking-wide leading-relaxed" href="#">Privacy Policy</a>
-<a class="text-slate-500 dark:text-slate-400 hover:text-amber-600 dark:hover:text-amber-400 transition-colors font-['Inter'] text-sm tracking-wide leading-relaxed" href="#">Terms of Service</a>
-</div>
-</div>
-</div>
-<div class="max-w-7xl mx-auto mt-16 pt-8 border-t border-slate-200/30">
-<p class="text-slate-400 font-['Inter'] text-[10px] tracking-widest uppercase">© 2026 CURATORIAL. ALL RIGHTS RESERVED.</p>
-</div>
-</footer>
+    <div class="flex flex-col md:flex-row gap-4 max-w-lg mx-auto">
+    <input class="flex-1 bg-surface-container-highest border-none rounded-md px-6 py-4 font-label text-sm tracking-widest uppercase focus:bg-surface-container-lowest transition-all" placeholder="YOUR EMAIL ADDRESS" type="email"/>
+    <button class="bg-primary text-on-primary px-8 py-4 rounded-md font-headline font-bold uppercase tracking-widest text-sm hover:bg-primary-container transition-all">Subscribe</button>
+    </div>
+    </div>
+    </section>
+    </main>
+  <!-- Footer -->
+  <footer class="w-full py-16 px-8 mt-24 border-t border-slate-200/50 dark:border-slate-800/50 bg-slate-50 dark:bg-slate-950">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-12 max-w-7xl mx-auto">
+    <div class="flex flex-col gap-6">
+    <div class="text-xl font-bold text-blue-950 dark:text-white uppercase font-headline">CURATORIAL</div>
+    <p class="text-slate-500 dark:text-slate-400 font-['Inter'] text-sm tracking-wide leading-relaxed">Defining the digital frontier of high-end editorial commerce. A standard for the modern curator.</p>
+    </div>
+    <div class="flex flex-col gap-4">
+    <h5 class="font-headline text-xs font-bold text-blue-950 dark:text-white uppercase tracking-widest">Navigation</h5>
+    <div class="flex flex-col gap-2">
+    <a class="text-slate-500 dark:text-slate-400 hover:text-amber-600 dark:hover:text-amber-400 transition-colors font-['Inter'] text-sm tracking-wide leading-relaxed" href="#">New Arrivals</a>
+    <a class="text-slate-500 dark:text-slate-400 hover:text-amber-600 dark:hover:text-amber-400 transition-colors font-['Inter'] text-sm tracking-wide leading-relaxed" href="#">Designers</a>
+    <a class="text-slate-500 dark:text-slate-400 hover:text-amber-600 dark:hover:text-amber-400 transition-colors font-['Inter'] text-sm tracking-wide leading-relaxed" href="#">Editorial</a>
+    <a class="text-slate-500 dark:text-slate-400 hover:text-amber-600 dark:hover:text-amber-400 transition-colors font-['Inter'] text-sm tracking-wide leading-relaxed" href="#">Archive</a>
+    </div>
+    </div>
+    <div class="flex flex-col gap-4">
+    <h5 class="font-headline text-xs font-bold text-blue-950 dark:text-white uppercase tracking-widest">Support</h5>
+    <div class="flex flex-col gap-2">
+    <a class="text-slate-500 dark:text-slate-400 hover:text-amber-600 dark:hover:text-amber-400 transition-colors font-['Inter'] text-sm tracking-wide leading-relaxed" href="#">Sustainability</a>
+    <a class="text-slate-500 dark:text-slate-400 hover:text-amber-600 dark:hover:text-amber-400 transition-colors font-['Inter'] text-sm tracking-wide leading-relaxed" href="#">Contact</a>
+    <a class="text-slate-500 dark:text-slate-400 hover:text-amber-600 dark:hover:text-amber-400 transition-colors font-['Inter'] text-sm tracking-wide leading-relaxed" href="#">Shipping &amp; Returns</a>
+    </div>
+    </div>
+    <div class="flex flex-col gap-4">
+    <h5 class="font-headline text-xs font-bold text-blue-950 dark:text-white uppercase tracking-widest">Legal</h5>
+    <div class="flex flex-col gap-2">
+    <a class="text-slate-500 dark:text-slate-400 hover:text-amber-600 dark:hover:text-amber-400 transition-colors font-['Inter'] text-sm tracking-wide leading-relaxed" href="#">Privacy Policy</a>
+    <a class="text-slate-500 dark:text-slate-400 hover:text-amber-600 dark:hover:text-amber-400 transition-colors font-['Inter'] text-sm tracking-wide leading-relaxed" href="#">Terms of Service</a>
+    </div>
+    </div>
+    </div>
+    <div class="max-w-7xl mx-auto mt-16 pt-8 border-t border-slate-200/30">
+    <p class="text-slate-400 font-['Inter'] text-[10px] tracking-widest uppercase">© 2026 CURATORIAL. ALL RIGHTS RESERVED.</p>
+    </div>
+  </footer>
 </body></html>
