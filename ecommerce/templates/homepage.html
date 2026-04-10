@@ -89,7 +89,7 @@
 <nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur-xl shadow-sm shadow-blue-900/5">
 <div class="flex justify-between items-center px-8 py-4 max-w-[1920px] mx-auto">
 <div class="flex items-center gap-12">
-<a class="text-2xl font-black tracking-tighter text-blue-950 dark:text-white uppercase font-headline" href="#">CURATORIAL</a>
+	<a class="text-2xl font-black tracking-tighter text-blue-950 dark:text-white uppercase font-headline" href="{% url 'homepage' %}">CURATORIAL</a>
 <div class="hidden md:flex gap-8">
 <a class="font-['Manrope'] tracking-tight text-sm uppercase font-semibold text-blue-950 dark:text-amber-400 border-b-2 border-amber-400 pb-1" href="#">New Arrivals</a>
 <a class="font-['Manrope'] tracking-tight text-sm uppercase font-semibold text-slate-500 dark:text-slate-400 hover:text-blue-900 transition-colors" href="#">Designers</a>
@@ -103,7 +103,7 @@
 <input class="bg-transparent border-none focus:ring-0 text-sm font-label tracking-wide uppercase" placeholder="Search archive..." type="text"/>
 </div>
 <div class="flex gap-4">
-<a href="shopping_cart.html">
+	<a href="{% url 'shopping_cart' %}">
 <button class="hover:bg-slate-50/50 dark:hover:bg-slate-900/50 transition-all duration-300 p-2 rounded-full">
 <span class="material-symbols-outlined text-blue-900 dark:text-blue-200">shopping_bag</span>
 </button>
